@@ -1,3 +1,249 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container{
+    /* border: 1px solid crimson; */
+}
+nav {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* border:1px solid green; */
+}
+
+nav a {
+	text-decoration: none;
+	color: grey;
+    
+    padding: 25px;
+    /* border-bottom:1px solid black; */
+}
+
+nav .logo {
+    padding-left: 50px;
+    /* border:1px solid black; */
+}
+
+header {
+	line-height: 0.75;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    /* border:3px solid indigo; */
+}
+
+header .title {
+    font-size: 68px;
+    text-align: center;
+    display:column;
+    margin-right: 100px;
+    /* border:3px dashed blue; */
+}
+
+header .title button {
+	/* border: 1px solid black; */
+	margin-top: 0px;
+	padding: 6px 40px;
+}
+
+header img {
+	display: inline-block;
+	width: 35%;
+}
+
+.top-content {
+	width: 100%;
+}
+
+.top-content div {
+	display: inline-block;
+	width: 49%;
+	text-align: justify;
+	padding: 10px;
+}
+
+.middle-img {
+    margin: 30px 0px;
+    width:100%;
+}
+
+.bottom-content {
+	width: 100%;
+}
+
+.bottom-content div {
+	display: inline-block;
+	width: 33%;
+	text-align: justify;
+	padding: 10px;
+}
+
+.contact {
+	margin-top: 30px;
+}
+
+body { /* centers the website */
+	width: 100%;
+	margin: 0 auto;
+}
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+}
+.first-image{
+	position: relative;
+	right: -40%;
+}
+
+@media(max-width:800px){
+   .container{
+       /* background-color: purple;   */
+       
+}
+
+    header img{
+        display: none;
+        /* border:1px solid black; */
+    }
+    header div{
+        /* border: 3px solid wheat; */
+        
+        margin: 0 auto;
+       width:100%;
+       
+    }
+    
+    header{
+        /* border:1px solid crimson; */
+        margin:0 auto;
+        width:100%;    
+    }
+    header.title{
+        display: flex;
+    }
+    nav{
+        /* background-color: lavender; */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    nav img{
+        display: none;
+    }
+    .anchordiv{
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+    .anchordiv{
+        display:flex;
+        
+    }
+   
+}
+@media(max-width:680px){
+    .container{
+        /* background-color: blue; */
+    
+}
+    nav img{
+        display: flex;
+    }
+    nav{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .anchordiv{
+        flex-direction: column;
+        
+    }
+    .anchordiv a{
+        text-align: center;
+    }
+
+   .mobilesection div{
+       display:flex;
+       flex-direction: column;
+       width:100%;
+       /* border:1px solid black; */
+             
+   } 
+   .mobilesection{
+       /* border:1px solid burlywood; */
+       /* width:40%; */
+   }
+   .mobilesection img{
+        width:100%; 
+   }
+   nav a {
+    border-bottom:1px solid black;
+}
